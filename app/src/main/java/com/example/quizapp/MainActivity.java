@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-
-import org.json.JSONArray;
+import com.example.quizapp.controller.AppController;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, response -> {
-            Log.d("TAG","onCreate: "+response.toString());
+            Log.d("TAG","onCreate: " + response.toString());
 
         }, error -> {
             Log.d("TAG","failed due to sum error");
