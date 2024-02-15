@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">quizapp</string>
+    <string name="title_text">Trivia\n</string>
+    <string name="out_of_text">Question:45/80</string>
 </resources>

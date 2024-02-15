@@ -8,24 +8,25 @@ import android.util.Log;
 import com.android.volley.Request;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.example.quizapp.controller.AppController;
+import com.example.quizapp.data.Respository;
+import com.example.quizapp.model.Question;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-       String url = "https://raw.githubusercontent.com/curiousily/simple-quiz/master/script/statements-data.json";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, response -> {
-            Log.d("TAG","onCreate: " + response.toString());
+        List < Question> questions;
+        questions = new Respository().getQuestions();
 
-        }, error -> {
-            Log.d("TAG","failed due to sum error");
+        Log.d("main","oncreate : "+ questions.get(0));
 
-        });
 
-        AppController.getInstance().addToRequestQueue(jsonArrayRequest);
     }
 }
