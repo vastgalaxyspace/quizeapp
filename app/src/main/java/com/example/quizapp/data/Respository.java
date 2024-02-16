@@ -17,7 +17,7 @@ public class Respository {
     ArrayList <Question> questionArrayList=new ArrayList<>();
     String url = "https://raw.githubusercontent.com/curiousily/simple-quiz/master/script/statements-data.json";
 
-    public List<Question> getQuestions(){
+    public List<Question> getQuestions(final AnswerListAsyncResponse callback){
         JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, response -> {
             for (int i = 0; i < response.length(); i++) {
                 try {
@@ -31,7 +31,9 @@ public class Respository {
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
+
             }
+            if(null != callback) callback.processFinished(questionArrayList);
 
 
         }, error -> {

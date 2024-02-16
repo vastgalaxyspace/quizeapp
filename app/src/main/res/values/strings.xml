@@ -2,4 +2,8 @@
     <string name="app_name">quizapp</string>
     <string name="title_text">Trivia\n</string>
     <string name="out_of_text">Question:45/80</string>
+    <string name="Buttontrue">TRUE\n</string>
+    <string name="buttonfalse">FALSE</string>
+    <string name="nextbtn">NEXT\n</string>
+    <string name="palceholder">there are so many peoeple in world some are young and some are aged and sum are adult\n</string>
 </resources>
