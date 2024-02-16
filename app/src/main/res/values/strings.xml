@@ -6,4 +6,7 @@
     <string name="buttonfalse">FALSE</string>
     <string name="nextbtn">NEXT\n</string>
     <string name="palceholder">there are so many peoeple in world some are young and some are aged and sum are adult\n</string>
+    <string name="text_formatted">Question: %d/%d</string>
+    <string name="correct_answer">Correct congrates!\n</string>
+    <string name="false_answer">False Try again\n</string>
 </resources>
