@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">quizapp</string>
-    <string name="title_text">Trivia\n</string>
+    <string name="app_name">Quiz</string>
+    <string name="title_text">Quiz\n</string>
     <string name="out_of_text">Question:45/80</string>
     <string name="Buttontrue">TRUE\n</string>
     <string name="buttonfalse">FALSE</string>
