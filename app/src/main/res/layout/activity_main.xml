@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="153dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#1B213A"
             android:elevation="12dp"
@@ -60,7 +60,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
                 android:padding="@dimen/question_text_padding"
-                android:text="@string/palceholder"
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
@@ -78,12 +77,12 @@
         <Button
             android:id="@+id/button_false"
             style="@style/button_style"
-            android:layout_width="389dp"
-            android:layout_height="46dp"
+            android:layout_width="381dp"
+            android:layout_height="45dp"
             android:layout_marginTop="8dp"
             android:text="@string/buttonfalse"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintHorizontal_bias="0.566"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_true" />
 
@@ -92,13 +91,34 @@
             style="@style/button_style"
             android:layout_width="92dp"
             android:layout_height="49dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="12dp"
             android:gravity="center|center_horizontal|center_vertical"
             android:text="@string/nextbtn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.835"
+            app:layout_constraintHorizontal_bias="0.833"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_false" />
+
+        <TextView
+            android:id="@+id/score_text"
+            style="@style/mainscorestyle"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.633"
+            app:layout_constraintStart_toEndOf="@+id/text_view_out_of"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+        <TextView
+            android:id="@+id/highest_score"
+            style="@style/mainscorestyle"
+            android:layout_width="93dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:text="Highest="
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toEndOf="@+id/text_view_out_of"
+            app:layout_constraintTop_toBottomOf="@+id/score_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
